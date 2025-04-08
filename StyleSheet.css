@@ -102,16 +102,16 @@ h2 {
 /* === För Bilder === */
 img {
     max-width: 100%;
-    height: auto;
+    height: 500px;
     border-radius: 8px;
-    margin-top: 20px;
+    margin-top: 75px;
 }
 
 /* === Knapp för språkval === */
 .language-selector {
     position: fixed;
     top: 20px;
-    right: 20px;
+    left: 20px;
     z-index: 1000;
 }
 
@@ -161,25 +161,30 @@ img {
     transform: translateY(2px); /* Lägger till en liten "tryck"-effekt när knappen är aktiv */
 }
 
-/* Responsiv layout för telefoner */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;  /* Ändra fontstorlek på mindre skärmar */
-        padding: 10px;
-    }
+/* === Knappar för andra sidor === */
+.otherPages {
+    display: flex;
+    justify-content: center; /* Centrerar knapparna horisontellt */
+    gap: 20px; /* Lägger till utrymme mellan knapparna */
+    margin-top: 40px;
+}
+.otherPages button {
+    padding: 12px 24px; /* Gör knapparna lite större */
+    font-size: 18px; /* Ändrar textstorleken */
+    font-family: 'Poppins', sans-serif;
+    color: #fff; /* Textfärg */
+    background-color: #5f4b8b; /* Bakgrundsfärg (lila) */
+    border: 2px solid #5f4b8b; /* Ramfärg */
+    border-radius: 8px; /* Rundade hörn */
+    cursor: pointer; /* Pekar för att indikera att knappen är klickbar */
+    transition: all 0.3s ease-in-out; /* Mjuk övergång för effekter */
+}
+.otherPages button:hover {
+    background-color: #b4a7d6; /* Ändrar bakgrundsfärg på hover */
+    border-color: #b4a7d6; /* Ändrar ramfärgen på hover */
+    transform: translateY(-4px); /* Lyfter knappen när musen är över */
+}
 
-    .left-section, .right-section {
-        width: 100%; /* Gör sektionerna 100% breda på små skärmar */
-        padding: 20px;
-    }
-
-    .contacts button {
-        width: 100%; /* Gör knapparna breda på mobil */
-        margin-bottom: 10px; /* Lägger till mellanrum mellan knapparna */
-    }
-
-    /* Ändra layout för grid */
-    .grid-container {
-        grid-template-columns: 1fr; /* En kolumn på små skärmar */
-    }
+.otherPages button:active {
+    transform: translateY(2px); /* Lägger till en liten "tryck"-effekt när knappen är aktiv */
 }

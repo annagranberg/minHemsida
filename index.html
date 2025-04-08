@@ -1,86 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="StyleSheet.css">
-    <script src="js.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anna Granberg</title>
+    <link rel="stylesheet" href="StyleSheet.css">
 </head>
 <body>
-
-<!-- Navbar med ditt namn och presentation -->
-<div class="navbar">
+<div class="language-selector">
+    <button id="lang-sv" onclick="switchLanguage('sv')">Swedish</button>
+    <button id="lang-en" onclick="switchLanguage('en')">English</button>
+</div>
+<div class="left-section">
+    <a href="PicOfMe.jpeg">
+        <img src="PicOfMe.jpeg" alt="Bild på mig">
+    </a>
     <h1>Anna Granberg</h1>
-    <h2>En blivande mjukvaruutvecklare</h2>
-    <div id="navbarButton">
-        <a href="CV.html">
-            <button id="resume">CV</button>
-        </a>
-        <a href="Portfolio.html">
-            <button id="portfolio">Portfolio</button>
-        </a>
-
-    </div>
+    <h2>Systemutvecklare</h2>
 </div>
 
-<<div class="container">
-    <h1>INTRODUKTION</h1>
-    <div class="grid-container">
-        <div class="box">
-            <h2>BAKGRUND</h2>
-            <ul>
-                <li>Född och uppvuxen i Malmö</li>
-                <li>Arbetat mycket inom service</li>
-            </ul>
-        </div>
-        <div class="box">
-            <h2>UTBILDNING</h2>
-            <ul>
-                <li>Kandidatexamen i datavetenskap med inriktning mot systemutveckling</li>
-                PÅGÅENDE
-            </ul>
-        </div>
-        <div class="box">
-            <h2>INTRESSEN</h2>
-            <ul>
-                <li>Teknik i allmänhet</li>
-                <li>Malmö FF</li>
-                <li>Öl</li>
-                <li>(work in progress)</li>
-            </ul>
-        </div>
-        <div class="box">
-            <h2>SKILLS</h2>
-            <ul>
-                <li>idk</li>
+<div class="right-section">
+    <h1>Om mig</h1>
+    <p>
+        Jag är en systemutvecklingsstudent med ett stort intresse för att skapa tekniska lösningar som gör skillnad.
+        Jag brinner för att hitta kreativa sätt att lösa problem och att bygga användarvänliga och effektiva system.
+    </p>
+    <p>
+        När jag inte sitter på skolan och studerar hittar du mig ofta på en fotbollsmatch, tillsammans med mina vänner, eller framför en TV-serie.
+        Jag tycker också om att utforska nya sätt att använda mina tekniska kunskaper i personliga projekt.
+    </p>
+    <p>
+        Jag är alltid öppen för nya idéer och utmaningar, så tveka inte att höra av dig om du har några frågor eller vill samarbeta!
+    </p>
 
-            </ul>
-        </div>
+    <div class="contacts">
+        <button id="email-btn">Email</button>
+        <button id="github-btn">Github</button>
+        <button id="linkedin-btn">LinkedIn</button>
     </div>
+
 </div>
-
-<div class="contact-container">
-    <div class="contact-box">
-        <a href="http://linkedin.com/in/anna-granberg-945b691a1" target="_blank">
-            <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
-    </div>
-    <div class="contact-box">
-        <a href="tel:+46733030368" target="_blank">
-            <i class="fab fa-github"></i> Telefon
-        </a>
-    </div>
-    <div class="contact-box">
-        <a href="mailto:annagranberg03@gmail.com">
-            <i class="fas fa-envelope"></i> Email
-        </a>
-    </div>
-    <div class="contact-box">
-        <a href="https://discord.com/users/annagranberg" target="_blank">
-            <i class="fab fa-twitter"></i> Discord
-        </a>
-    </div>
-</div>
-
 </body>
 </html>

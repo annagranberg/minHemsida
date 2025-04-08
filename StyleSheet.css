@@ -160,3 +160,26 @@ img {
 .contacts button:active {
     transform: translateY(2px); /* Lägger till en liten "tryck"-effekt när knappen är aktiv */
 }
+
+/* Responsiv layout för telefoner */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;  /* Ändra fontstorlek på mindre skärmar */
+        padding: 10px;
+    }
+
+    .left-section, .right-section {
+        width: 100%; /* Gör sektionerna 100% breda på små skärmar */
+        padding: 20px;
+    }
+
+    .contacts button {
+        width: 100%; /* Gör knapparna breda på mobil */
+        margin-bottom: 10px; /* Lägger till mellanrum mellan knapparna */
+    }
+
+    /* Ändra layout för grid */
+    .grid-container {
+        grid-template-columns: 1fr; /* En kolumn på små skärmar */
+    }
+}

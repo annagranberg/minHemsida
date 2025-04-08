@@ -154,3 +154,31 @@ img {
 .otherPages button:active {
     transform: translateY(2px); /* Lägger till en liten "tryck"-effekt när knappen är aktiv */
 }
+
+/* === För Mobiltelefoner === */
+@media (max-width: 600px) {
+    body {
+        flex-direction: column; /* Byter från horisontell layout till vertikal */
+        font-size: 14px;
+    }
+    .left-section, .right-section {
+        width: 100%; /* Tar upp hela bredden */
+        padding: 20px; /* Minskar paddingen */
+    }
+    h1 {
+        font-size: 32px; /* Justerar rubrikstorlek för mobiler */
+    }
+    h2 {
+        font-size: 18px; /* Justerar textstorlek för mindre enheter */
+    }
+    .container {
+        padding: 20px;
+    }
+    .contacts, .otherPages {
+        flex-direction: column; /* Gör så att knapparna staplas vertikalt */
+        gap: 10px; /* Minskar mellanrummet mellan knappar */
+    }
+    .box {
+        width: 100%; /* Gör boxarna 100% breda på mobil */
+    }
+}

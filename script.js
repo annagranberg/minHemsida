@@ -1,13 +1,13 @@
 function switchLanguage(lang) {
-    if (lang === 'sv') {
-        document.getElementById('left-sv').style.display = 'block';
-        document.getElementById('right-sv').style.display = 'block';
-        document.getElementById('left-en').style.display = 'none';
-        document.getElementById('right-en').style.display = 'none';
-    } else if (lang === 'en') {
-        document.getElementById('left-sv').style.display = 'none';
-        document.getElementById('right-sv').style.display = 'none';
-        document.getElementById('left-en').style.display = 'block';
-        document.getElementById('right-en').style.display = 'block';
-    }
+    // Hitta alla element med data-lang attribut
+    const contentElements = document.querySelectorAll('.content');
+
+    // Gå igenom alla element och justera deras synlighet
+    contentElements.forEach(function(element) {
+        if (element.getAttribute('data-lang') === lang) {
+            element.style.display = 'block';  // Visa rätt språk
+        } else {
+            element.style.display = 'none';   // Dölj andra språk
+        }
+    });
 }

@@ -39,11 +39,12 @@ body {
 h1 {
     font-size: 46px;
     color: #5f4b8b; /* Mörklila */
-    margin-bottom: 0;
+    margin-bottom: 0px;
     font-weight: bold;
 }
 
 h2 {
+    margin-top: 0;
     font-size: 23px;
     color: #444;
     font-weight: 300;
@@ -67,18 +68,6 @@ h2 {
     grid-template-columns: 1fr;
     gap: 20px;
     justify-items: center; /* Centrerar innehållet inom gridceller */
-}
-
-@media (min-width: 600px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1024px) {
-    .grid-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
 
 /* === Boxar med Hover Effekt === */
@@ -107,36 +96,13 @@ img {
     margin-top: 75px;
 }
 
-/* === Knapp för språkval === */
-.language-selector {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
-}
-
-.language-selector button {
-    padding: 10px;
-    margin: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    background-color: #5f4b8b;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.language-selector button:hover {
-    background-color: #b4a7d6;
-}
-
 /* === Knappar för att kontakta mig ===*/
 .contacts {
     display: flex;
     justify-content: center; /* Centrerar knapparna horisontellt */
     gap: 20px; /* Lägger till utrymme mellan knapparna */
-    margin-top: 40px;
+    margin-top: 0px;
+    margin-bottom: 100px;
 }
 
 .contacts button {

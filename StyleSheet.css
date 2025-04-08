@@ -91,7 +91,7 @@ h2 {
 /* === För Bilder === */
 img {
     max-width: 100%;
-    height: 500px;
+    height: auto;
     border-radius: 8px;
     margin-top: 75px;
 }

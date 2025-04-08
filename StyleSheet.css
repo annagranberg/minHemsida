@@ -30,21 +30,11 @@ body {
     background-color: #f5f7fa; /* Ljusgrå bakgrund */
     width: 50%; /* Tar upp hälften av skärmen */
     padding: 40px;
+    margin-left: 50%; /* Flyttar den högra sektionen till höger */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    overflow-y: scroll;
-}
-.right-section {
-    background-color: #f5f7fa; /* Ljusgrå bakgrund */
-    width: 50%; /* Tar upp hälften av skärmen */
-    padding: 40px;
-    box-sizing: border-box;
-    margin-left: 50%; /* Flyttar den högra sektionen till höger */
-    height: 100vh; /* Full höjd på sidan */
-    overflow-y: scroll; /* Gör att den högra sektionen blir rullbar */
     align-items: flex-start;
 }
 
@@ -53,7 +43,7 @@ body {
 h1 {
     font-size: 46px;
     color: #5f4b8b; /* Mörklila */
-    margin-bottom: 0px;
+    margin-bottom: 0;
     font-weight: bold;
 }
 
@@ -125,6 +115,7 @@ img {
     gap: 20px; /* Lägger till utrymme mellan knapparna */
     margin-top: 0px;
     margin-bottom: 100px;
+    
 }
 
 .contacts button {

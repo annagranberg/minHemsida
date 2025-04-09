@@ -178,6 +178,7 @@ img {
     .left-section, .right-section {
         width: 100%; /* Tar upp hela bredden */
         padding: 20px; /* Minskar paddingen */
+        position: static;
     }
     .left-section {
         position: relative;

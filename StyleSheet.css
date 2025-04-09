@@ -179,6 +179,9 @@ img {
         width: 100%; /* Tar upp hela bredden */
         padding: 20px; /* Minskar paddingen */
     }
+    .left-section {
+        position: relative;
+    }
     h1 {
         font-size: 32px; /* Justerar rubrikstorlek för mobiler */
     }

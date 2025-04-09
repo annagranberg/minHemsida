@@ -113,9 +113,9 @@ img {
     display: flex;
     justify-content: center; /* Centrerar knapparna horisontellt */
     gap: 20px; /* Lägger till utrymme mellan knapparna */
-    margin-top: 0px;
+    margin-top: 75px;
     margin-bottom: 100px;
-    
+
 }
 
 .contacts button {
